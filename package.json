@@ -1,0 +1,42 @@
+{
+  "name": "@performance-artist/web-storage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prettify": "prettier --write src/**/*.{ts,tsx,js,jsx,css,scss,json}",
+    "check-types": "tsc -p . --noEmit",
+    "check-types:watch": "tsc -p . --noEmit -w"
+  },
+  "author": "performanceArtist",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/performanceArtist/web-storage.git"
+  },
+  "license": "ISC",
+  "peerDependencies": {
+    "fp-ts": "^2.8.2",
+    "@performance-artist/rx-utils": "^1.0.3",
+    "rxjs": "^6.6.3",
+    "io-ts": "^2.2.13"
+  },
+  "devDependencies": {
+    "@performance-artist/rx-utils": "^1.0.3",
+    "@types/node": "^12.12.55",
+    "fp-ts": "^2.8.2",
+    "io-ts": "^2.2.13",
+    "jest": "^26.4.2",
+    "prettier": "^1.19.1",
+    "rxjs": "^6.6.3",
+    "ts-jest": "^26.3.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
+  }
+}
